@@ -1,0 +1,11 @@
+# Dependencias (se regeneran, no se versionan)
+node_modules/
+.opencode/node_modules/
+
+# Archivos de entorno con posibles credenciales
+.env
+.env.local
+
+# Archivos temporales del sistema
+.DS_Store
+*.log
