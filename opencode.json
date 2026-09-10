@@ -1,0 +1,8 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "external_directory": {
+      "/mnt/c/Users/Laura/workspace/Metodos-de-cifrado-descifrado-de-texto/*": "ask"
+    }
+  }
+}
