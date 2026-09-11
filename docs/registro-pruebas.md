@@ -22,3 +22,28 @@
 **Evaluación:** el agente razonó con criterio real sobre código escrito de
 forma poco cuidada, no aplicó reglas mecánicas genéricas. No se requieren
 ajustes al skill en esta iteración.
+
+## Prueba 2 — 2026-09-11
+
+**Modelo:** Kimi K2.6 (OpenCode Go)
+**Agente/modo:** Build (permiso de edición denegado)
+**Repositorio analizado:** Proyecto-Final-de-IP (Java, consola)
+**Skill activo:** revision-estilo-java
+
+**Prompt usado:**
+"Revisa el código del proyecto en /mnt/c/Users/Laura/workspace/Proyecto-Final-de-IP
+en busca de problemas de estilo y errores comunes"
+
+**Resultado:**
+- El skill se activó correctamente, igual que en la Prueba 1.
+- Hallazgos de calidad similar a la Prueba 1, con predominancia de
+  problemas de estilo en este repositorio.
+- El agente ajustó su análisis al código real de este proyecto (no repitió
+  patrones genéricos entre pruebas).
+- A diferencia de la Prueba 1, el agente también señaló explícitamente qué
+  aspectos del código estaban bien, además de las sugerencias de mejora.
+
+**Evaluación:** el skill generaliza correctamente a un segundo repositorio
+distinto. El hecho de que reconozca aciertos y no solo fallos es una señal
+de razonamiento calibrado, no de sesgo hacia encontrar problemas por
+sistema. No se requieren ajustes al skill.
