@@ -47,3 +47,24 @@ en busca de problemas de estilo y errores comunes"
 distinto. El hecho de que reconozca aciertos y no solo fallos es una señal
 de razonamiento calibrado, no de sesgo hacia encontrar problemas por
 sistema. No se requieren ajustes al skill.
+
+## Prueba 3 — 2026-09-13
+
+**Modelo:** Kimi K2.6 (OpenCode Go)
+**Agente/modo:** Build (permiso de edición denegado)
+**Repositorio analizado:** Metodos-de-cifrado-descifrado-de-texto (Java, consola)
+**Skill activo:** revision-seguridad-java
+
+**Prompt usado:**
+"Revisa el código del proyecto en /mnt/c/Users/Laura/workspace/Metodos-de-cifrado-descifrado-de-texto
+en busca de problemas de seguridad"
+
+**Resultado:**
+- El agente leyó el skill y lo aplicó correctamente al análisis.
+- Presentó hallazgos organizados por severidad, con forma de corrección,
+  advertencias de uso y recomendaciones priorizadas.
+
+**Evaluación:** el skill de seguridad funciona correctamente en el
+repositorio para el que fue diseñado. Prueba de especificidad (verificar
+que NO se active en el proyecto genérico de IP) queda pendiente, no
+prioritaria por ahora.
