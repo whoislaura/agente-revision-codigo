@@ -1,7 +1,13 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "memory/PROJECT_MEMORY.md"
+  ],
   "permission": {
-    "edit": "deny",
+    "edit": {
+      "*": "deny",
+      "memory/**": "allow"
+    },
     "external_directory": {
       "/mnt/c/Users/Laura/workspace/Metodos-de-cifrado-descifrado-de-texto/*": "ask",
       "/mnt/c/Users/Laura/workspace/Proyecto-Final-de-IP/*": "ask"

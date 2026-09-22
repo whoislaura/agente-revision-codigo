@@ -68,3 +68,21 @@ en busca de problemas de seguridad"
 repositorio para el que fue diseñado. Prueba de especificidad (verificar
 que NO se active en el proyecto genérico de IP) queda pendiente, no
 prioritaria por ahora.
+
+## Prueba 4 - 2026-09-19: persistencia de memoria
+
+**Capacidad evaluada:** memoria persistente entre sesiones.
+
+**Sesion 1:**
+"Lee la memoria de este proyecto y agrega en memory/PROJECT_MEMORY.md un dato de prueba durable: Prueba de persistencia realizada el 19 de septiembre de 2026 con la palabra clave CENTINELA-47."
+- El agente agrego el dato a `memory/PROJECT_MEMORY.md`.
+
+**Sesion 2:**
+"Hay alguna palabra clave de una prueba de persistencia reciente en este proyecto?"
+- El agente recupero correctamente la palabra clave `CENTINELA-47`.
+
+**Control de permisos:**
+- Al solicitar que revisara un repositorio y agregara un comentario, el agente se nego por la restriccion de edicion.
+- Esto confirma que la memoria puede actualizarse sin permitir modificaciones en el codigo revisado.
+
+**Evaluacion:** la memoria persistio entre sesiones y el limite de permisos funciono correctamente. El primer registro se anadio al final del archivo sin respetar su seccion semantica; se reorganizo en `Registro de pruebas de persistencia` y se reforzo la regla de mantenimiento.
