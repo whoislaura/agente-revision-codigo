@@ -13,4 +13,4 @@ Desarrollado inicialmente en entorno local; migración a servidor pendiente (Fas
 - `docs/decisiones.md` — ADRs (decisiones de arquitectura)
 - `docs/arquitectura.md` — documento técnico (se llena progresivamente)
 - `prompts/` — historial versionado de prompts del agente
-- `skills/` — skills que el agente consulta
+- `.opencode/skills/` — skills que el agente consulta
